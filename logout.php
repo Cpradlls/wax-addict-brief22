@@ -9,7 +9,7 @@
   session_destroy();
 
   // bye
-  //header();
+  header("Location: index.html#deconnexion");
   exit; // exit après une redirection
 
 ?>
