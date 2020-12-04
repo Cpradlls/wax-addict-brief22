@@ -291,6 +291,25 @@ back-office / mobile
   body.back-office main {
     padding: 1rem;
   }
+  
+  body.back-office main #conteneur {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "img description";
+  }
+
+  body.back-office main #image {
+    grid-area: img;
+    width: 20vh;
+  }
+
+  body.back-office main ul {
+    grid-area: description;
+    list-style-type: none;
+
+  }
 
   body.back-office footer {
     background-color: rgba(0 0 0 / 10%);
