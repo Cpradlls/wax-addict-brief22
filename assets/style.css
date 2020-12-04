@@ -342,6 +342,25 @@ back-office / desktop
     align-content: center;
     grid-template-columns: 70rem;
   }
+  
+  body.back-office main #conteneur {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "img description";
+  }
+
+  body.back-office main #image {
+    grid-area: img;
+    width: 20vh;
+  }
+
+  body.back-office main ul {
+    grid-area: description;
+    list-style-type: none;
+
+  }
 
   body.back-office footer {
     grid-area: f;
