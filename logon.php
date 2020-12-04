@@ -8,7 +8,7 @@
   $postedPassword = $_POST["password"] ?? FALSE;
   
   // récupère les utilisateurs existants
-  //$usersFullpath = "conf/users.json";
+  $usersFullpath = "conf/users.json";
   $usersContent  = file_get_contents($usersFullpath);
   $usersArray    = json_decode($usersContent, JSON_OBJECT_AS_ARRAY);
 
